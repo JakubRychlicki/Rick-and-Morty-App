@@ -1,0 +1,14 @@
+.Container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .Container {
+    width: 1000px;
+    justify-content: space-between;
+  }
+}

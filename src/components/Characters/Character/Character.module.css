@@ -1,0 +1,25 @@
+.Container {
+  padding: 10px;
+}
+
+.ImageBox {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+}
+
+.Image {
+  height: 200px;
+  width: 200px;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+.Image:hover,
+.Image:focus {
+  transform: scale(1);
+}
