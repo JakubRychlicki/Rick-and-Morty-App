@@ -1,0 +1,57 @@
+.title {
+  color: #46474d;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.title::first-letter {
+  text-transform: capitalize;
+}
+
+.boxOptions {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.textLabel {
+  color: #fbb034;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+input[type="radio"]:after {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: white;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #11b0c8;
+}
+
+input[type="radio"]:checked:after {
+  width: 18px;
+  height: 18px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #11b0c8;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #11b0c8;
+}

@@ -1,9 +1,8 @@
-.container {
+.Container {
   display: flex;
   justify-content: center;
   background-color: #fbb034;
   background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
-  margin-bottom: 30px;
 }
 
 .imageText {

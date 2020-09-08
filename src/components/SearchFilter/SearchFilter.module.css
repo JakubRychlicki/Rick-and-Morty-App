@@ -1,0 +1,79 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.FormContainer {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  justify-content: space-around;
+}
+
+.labelBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.labelText {
+  display: block;
+  font-size: 18px;
+  color: #46474d;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.input,
+.input:focus {
+  border: none;
+  border-bottom: 2px solid #fbb034;
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #11b0c8;
+  letter-spacing: 0.4px;
+  padding-bottom: 8px;
+}
+
+.buttonsBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+.btn {
+  background-color: #4caf50;
+  border: none;
+  color: #46474d;
+  padding: 8px 24px;
+  text-decoration: none;
+  margin: 4px 2px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 15px 20px rgba(230, 145, 60, 0.4);
+}
+
+.Search {
+  background-color: #fcbc25;
+  margin-right: 20px;
+}
+
+.Reset {
+  background-color: transparent;
+  border: 2px solid #fcbc25;
+}

@@ -1,12 +1,12 @@
 import React from "react";
 
 import Layout from "./Layout/Layout";
-import Characters from "./components/Characters/Characters";
+import Main from "./containers/Main/Main";
 
 const App = () => {
   return (
     <Layout>
-      <Characters />
+      <Main />
     </Layout>
   );
 };

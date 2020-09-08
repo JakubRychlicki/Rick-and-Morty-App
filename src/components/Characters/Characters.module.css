@@ -1,14 +1,29 @@
 .Container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   width: 90vw;
   margin: 0 auto;
 }
 
+.CharactersBox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.btnOpen {
+  display: block;
+  width: 150px;
+  height: 50px;
+}
+
+@media (min-width: 500px) {
+  .btnOpen {
+    display: none;
+  }
+}
+
 @media (min-width: 1200px) {
   .Container {
-    width: 1000px;
+    width: 800px;
     justify-content: space-between;
   }
 }
