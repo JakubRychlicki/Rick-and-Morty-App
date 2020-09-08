@@ -35,7 +35,7 @@ export const fetchCharacters = () => {
   };
 };
 
-filtrationexport const filterCharacters = (name, gender, species, status) => {
+export const filterCharacters = (name, gender, species, status) => {
   return (dispatch) => {
     const queryParams = `?name=${name}&gender=${gender}&species=${species}&status=${status}`;
     dispatch(charactersFetchStart());
