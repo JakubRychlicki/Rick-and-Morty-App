@@ -9,21 +9,12 @@
   justify-content: center;
 }
 
-.btnOpen {
-  display: block;
-  width: 150px;
-  height: 50px;
-}
-
-@media (min-width: 500px) {
-  .btnOpen {
-    display: none;
-  }
-}
-
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .Container {
     width: 800px;
     justify-content: space-between;
+  }
+  .btnOpen {
+    display: none;
   }
 }

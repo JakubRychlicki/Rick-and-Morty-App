@@ -1,3 +1,7 @@
+.Container {
+  padding: 15px 0;
+}
+
 .title {
   color: #46474d;
   font-size: 18px;

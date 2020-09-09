@@ -17,10 +17,7 @@ const SearchModal = (props) => {
       }}
     >
       <div className={classes.Container}>
-        <button className={classes.btnClose} onClick={props.close}>
-          siema
-        </button>
-        <SearchFilter />
+        <SearchFilter {...props} />
       </div>
     </CSSTransition>
   );

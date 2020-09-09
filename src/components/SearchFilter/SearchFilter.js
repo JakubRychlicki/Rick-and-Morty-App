@@ -103,6 +103,9 @@ const SearchFilter = (props) => {
           Reset
         </button>
       </div>
+      <button className={classes.btnClose} onClick={props.close}>
+        siema
+      </button>
     </div>
   );
 };

@@ -5,7 +5,7 @@ const CustomRadioForm = (props) => {
   const { type, value, onHandleChange } = props;
 
   return (
-    <div>
+    <div className={classes.Container}>
       <h2 className={classes.title}>{type.name}</h2>
       <div className={classes.boxOptions}>
         {type.options.map((option) => (

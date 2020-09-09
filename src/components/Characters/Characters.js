@@ -6,16 +6,13 @@ import Character from "./Character/Character";
 import classes from "./Characters.module.css";
 
 const Characters = (props) => {
-  const { characters, onFetchCharacters, openFilter } = props;
+  const { characters, onFetchCharacters } = props;
 
   useEffect(() => {
     onFetchCharacters();
   }, [onFetchCharacters]);
   return (
     <div className={classes.Container}>
-      <button className={classes.btnOpen} onClick={openFilter}>
-        otworz
-      </button>
       <div className={classes.CharactersBox}>
         {characters.map((character) => (
           <Character key={character.id} character={character} />
