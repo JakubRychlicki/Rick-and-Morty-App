@@ -10,6 +10,7 @@ const Character = (props) => {
       <div className={classes.ImageBox}>
         <img className={classes.Image} src={image} alt={name} />
       </div>
+      <h3 className={classes.nameCharacter}>{name}</h3>
     </div>
   );
 };
