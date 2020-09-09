@@ -1,8 +1,8 @@
 .Container {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   width: 100%;
+  padding: 20px 0;
 }
 
 .FormContainer {
@@ -24,7 +24,6 @@
   font-size: 18px;
   color: #46474d;
   font-weight: bold;
-  padding-bottom: 10px;
 }
 
 .input,
@@ -80,9 +79,18 @@
 }
 
 .btnClose {
-  display: block;
-  height: 40px;
-  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  color: #46474d;
+  font-size: 32px;
+  cursor: pointer;
+  align-self: center;
+  border: none;
+  outline: none;
 }
 
 @media (min-width: 500px) {
@@ -95,5 +103,8 @@
   .FormContainer {
     flex-direction: row;
     justify-content: space-around;
+  }
+  .labelText {
+    padding-bottom: 10px;
   }
 }

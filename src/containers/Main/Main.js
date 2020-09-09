@@ -16,21 +16,22 @@ const Main = () => {
   };
 
   useEffect(() => {
-    if (window.innerWidth >= 1000) {
+    if (window.innerWidth >= 500) {
       openModal();
     }
-  }, [window.innerWidth]);
+  }, []);
 
   return (
     <div className={classes.Container}>
+      <SearchModal show={show} close={closeModal} />
       {show ? (
-        <SearchModal show={show} close={closeModal} />
+        ""
       ) : (
         <button className={classes.btnOpen} onClick={openModal}>
-          otworz
+          <i className="fas fa-search"></i>
+          <span className={classes.btnText}>Find a character</span>
         </button>
       )}
-
       <Characters openFilter={openModal} />
     </div>
   );

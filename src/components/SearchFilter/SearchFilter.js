@@ -104,7 +104,7 @@ const SearchFilter = (props) => {
         </button>
       </div>
       <button className={classes.btnClose} onClick={props.close}>
-        siema
+        <i className="far fa-times-circle"></i>
       </button>
     </div>
   );
