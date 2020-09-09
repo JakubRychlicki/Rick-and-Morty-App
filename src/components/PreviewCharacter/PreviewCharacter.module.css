@@ -1,0 +1,95 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 5px auto;
+}
+
+.nameBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.nameText {
+  font-size: 24px;
+  color: #46474d;
+  text-align: center;
+}
+
+.statusBox {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.statusText {
+  padding-left: 5px;
+  font-size: 20px;
+  color: black;
+}
+
+.imageWithDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageBox {
+  align-self: center;
+  margin: 10px 0;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+}
+
+.detailsBox {
+  padding: 10px 25px;
+}
+
+.detailsTitle {
+  color: #46474d;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+
+.detailsBox > p {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.detailsBox > p > span {
+  font-weight: normal;
+}
+
+.btnLeaveBox {
+  padding: 20px;
+  align-self: flex-end;
+}
+
+.btnLeave {
+  font-size: 28px;
+  color: #46474d;
+}
+
+@media (min-width: 500px) {
+  .btnLeaveBox {
+    display: none;
+  }
+  .imageWithDetails {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .detailsTitle {
+    padding-bottom: 10px;
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import * as actions from "../../store/actions/index";
 
@@ -15,7 +16,9 @@ const Characters = (props) => {
     <div className={classes.Container}>
       <div className={classes.CharactersBox}>
         {characters.map((character) => (
-          <Character key={character.id} character={character} />
+          <Link key={character.id} to={`/character/${character.id}`}>
+            <Character character={character} />
+          </Link>
         ))}
       </div>
     </div>
