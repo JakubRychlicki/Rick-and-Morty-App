@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import * as actions from "../../store/actions/index";
 
 import Character from "./Character/Character";
+import Spinner from "../UI/Spinner/Spinner";
 import classes from "./Characters.module.css";
 
 const Characters = (props) => {
@@ -14,19 +15,26 @@ const Characters = (props) => {
   }, [onFetchCharacters]);
   return (
     <div className={classes.Container}>
-      <div className={classes.CharactersBox}>
-        {characters.map((character) => (
-          <Link key={character.id} to={`/character/${character.id}`}>
-            <Character character={character} />
-          </Link>
-        ))}
-      </div>
+      {props.loading ? (
+        <Spinner />
+      ) : (
+        <div className={classes.CharactersBox}>
+          {characters.map((character) => (
+            <Link key={character.id} to={`/character/${character.id}`}>
+              <Character character={character} />
+            </Link>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
 
 const mapStateToProps = (state) => {
-  return { characters: state.characters.characters };
+  return {
+    characters: state.characters.characters,
+    loading: state.characters.loading,
+  };
 };
 
 const mapDispatchToProps = (dispatch) => {

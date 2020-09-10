@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import axios from "../../axios-rickyandmorty";
 import classes from "./PreviewCharacter.module.css";
 
+import Spinner from "../UI/Spinner/Spinner";
+
 const PreviewCharacter = ({ match }) => {
   let id = match.params.id;
 
@@ -38,7 +40,11 @@ const PreviewCharacter = ({ match }) => {
           </div>
           <div className={classes.imageWithDetails}>
             <div className={classes.imageBox}>
-              <img className={classes.avatar} src={character.image} />
+              <img
+                className={classes.avatar}
+                src={character.image}
+                alt={character.name}
+              />
             </div>
             <div className={classes.detailsBox}>
               <h3 className={classes.detailsTitle}>Details:</h3>
@@ -60,7 +66,7 @@ const PreviewCharacter = ({ match }) => {
           </div>
         </div>
       ) : (
-        <h2>loading</h2>
+        <Spinner />
       )}
     </>
   );
