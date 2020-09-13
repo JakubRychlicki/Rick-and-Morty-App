@@ -4,6 +4,8 @@ App to find a character from Rick and Morty.
 
 ---
 
+![rickandmorty](https://user-images.githubusercontent.com/35461058/93023364-bb342600-f5ee-11ea-80a8-e28c61185e6c.gif)
+
 ## Installation
 
 ### 1. npm install
